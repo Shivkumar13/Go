@@ -12,18 +12,12 @@ func main() {
 		fmt.Printf("The numbers in the array serially are ID:%d\n", ID)
 	}
 
-	addition := 0
+	wholesum := 0
 
-	fmt.Println(addition)
+	for _, ele := range numbers {
 
-	for _, something := range numbers {
-		addition += something
+		wholesum += ele // wholesum = wholesum + ele
 
-		fmt.Println(addition)
-
-		fmt.Printf("This is something %d\n", something)
 	}
-	fmt.Println("....")
-	fmt.Println("...")
-	fmt.Println(addition)
+	fmt.Println(wholesum)
 }
