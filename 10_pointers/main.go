@@ -20,4 +20,7 @@ func main() {
 	fmt.Println(*a)  // Grabbing out value from the address.
 	fmt.Println(*&c) // This is same as `*a`, because `a := &c`
 
+	*a = 1
+	fmt.Println(c) //Now c will have the value 10 in it
+	fmt.Println(a)
 }
