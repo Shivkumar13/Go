@@ -14,9 +14,9 @@ func main() {
 	fmt.Println(*q)
 }
 
-func add(p int32, q int32) {
+func add(p int32, q int32) int32 { // p & q is
 
 	c := p + q
 	fmt.Println("Addition is:", c)
-	//	return c
+	return c
 }
